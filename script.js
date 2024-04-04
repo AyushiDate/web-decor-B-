@@ -942,7 +942,7 @@ for(i=1;i<=num;i++){
      console.log(`${org} is not a palindrome !`)
  }
 }*/
-  let num = 101;
+  /*let num = 101;
 
 for(i=1;i<=3;i++){
   if(isPalindrome(i)){
@@ -954,4 +954,221 @@ for(i=1;i<=3;i++){
     console.log(`${num} is a palindrome !`)
 }else{
     console.log(`${num} is not a palindrome !`)
+}*/
+
+//trailing portion
+//push method
+{
+let nums=[21,22,23,24,25]
+console.log(nums.length);
+nums.push(26,27);
+console.log(nums);
 }
+
+//pop method
+{
+let nums=[21,22,23,24,25]
+console.log(nums.length);
+nums.pop(25,26,27);
+console.log(nums);
+}
+
+//leading portion
+//unshift method
+{
+let str=["Ayu","Anu","Anku","Akshu"]
+console.log(str.length);
+str.unshift("Tina","Unatti");
+console.log(str);
+}
+
+//Shift method
+{
+  let str=["Ayu","Anu","Anku","Akshu"]
+  console.log(str.length);
+  str.shift("Tina","Unatti");
+  console.log(str);
+  }
+
+  //Splice method
+  {
+    let str=["Ayu","Anu","Anku","Akshu"]
+    console.log("Ayu","Anu","Anku","Akshu")
+    str.splice(2,0,"Archu");
+    console.log(str);
+  }
+
+  //Slice method
+  {
+    let str=["Ayu","Anu","Anku","Akshu"]
+    let newstr=str.slice(0,1)
+    console.log(newstr);
+    //console.log(names);
+  }
+
+  //Four types of function
+
+//no argument no return using arrow function
+  {
+    function sum(){
+      console.log(10+20)
+    }
+    sum()
+    let sum1=()=>{
+      console.log(10+20)
+    }
+  }
+
+  //argument but no return
+  {
+    function sum(a,b){
+      console.log(a+b)
+    }
+    sum()
+    let sum1=()=>{
+      console.log(250,50)
+    }
+  }
+
+  //argument and return
+  {
+    function sum(a,b){
+        return a+b
+    }
+    let sum1=()=>{
+      console.log(sum(50,50))
+    }
+  }
+
+//no argument but return
+  {
+    const greet = () =>{
+      console.log("hello world !")
+    }
+    greet()
+    greet()
+    greet()
+    greet()
+    greet()
+}
+
+//Math class method
+{
+let a = Math.pow(2,2)
+console.log(a)
+}
+
+{
+  console.log(Math.sqrt(144))
+  console.log(Math.cbrt(125))
+}
+
+{
+let maxnumber=Math.max(12,28,56,78)
+let minnumber=Math.min(1,2,3,5)
+    console.log(maxnumber)
+    console.log(minnumber)
+}
+
+//Random numbers
+{
+console.log((Math.random()*7+1).toFixed(0))
+}
+
+//Generate random Otp
+//Six digits
+{
+let Otp;
+otp=(Math.random()*999999).toFixed(0)
+console.log(otp)
+console.log(typeof(otp))
+    if(otp.length<=6){
+    console.log(otp)
+    console.log(typeof(otp))
+    }
+}
+
+//Round of value
+//value<0.5=0
+{
+  let value=61.4539
+  value=Math.round(value)
+  console.log(value)
+}
+{
+  let value=90.999999
+  value=Math.floor(value)
+  console.log(value)
+}
+{
+  let value=61.4539
+  value=Math.ceil(value)
+  console.log(value)
+}
+
+
+//Method overloading
+{
+  function sumofNumber(a,b){
+  alert("1")
+  return a+b
+}
+function sumofNumber(a,b,c){
+  alert("2")
+  return a+b+c
+}
+function sumofNumber(a,b,c,d){
+  alert("3")
+  return a+b+c+d
+}
+function sumofNumber(a,b,c,d,e){
+  alert("4")
+  return a+b+c+d+e
+}
+console.log(sumofNumber(10,20))
+}
+
+//Arrow function for no arguments and return
+
+let greet=()=>{
+  //function body
+  return "Hello"
+}
+console.log(greet())
+
+//object iteration(forin loop)
+
+/*{
+  let student={
+    name:"Anu",
+    roll:5,
+    contact:7498524141,
+    id:"A123"
+  }
+  console.log(key)
+  console.log(student[key])
+  console.log('${key}=$(student[key])')
+  console.log(student)
+}*/
+
+{
+let nums=[1,2,3,4]
+
+let[a,b,c,d]=[1,2,3,4]
+  console.log(a)
+  console.log(b)
+  console.log(c)
+  console.log(d)
+}
+
+//object extraction
+{
+let user={
+  name:"Anu",
+  contact:7498524141,
+  id:"A123"
+}
+console.log(user.name)
+}
+
+
