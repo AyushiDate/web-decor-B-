@@ -1171,4 +1171,66 @@ let user={
 console.log(user.name)
 }
 
+{
+let students=[
+  {name:"Anu",age:21,contact:7498524141}
+  {name:"Ayu",age:21,contact:7498524141}
+  {name:"Akash",age:22,contact:7498524141}
+  {name:"Anku",age:24,contact:7498524141}
+]
+student[0].address="Nagpur"
+students.push({name:"Om",age:21,contact:7498524141})
+
+for(let student of students){
+  student.address="Nagpur"
+}
+for(let student of students){
+  console.log(student)
+}
+}
+{
+let students = [ 
+      {name: "amey" , age : 13 , contact: 9766696550},
+       {name: "jayesh" , age : 19 , contact: 787454683},
+       {name: "Anushree" , age : 23 , contact: 789745464},
+       {name: "Ayushi" , age : 20 , contact: 4567688963},
+      {name: "Unnati" , age : 11 , contact: 5457993632},
+       {name: "Tina" , age : 16 , contact: 8777999633},
+       {name: "yash" , age: 22, contact: 7897987642 }
+   ]
+  
+   students[0].address = "nagpur"
+  
+  // we have created a data sheet of student in array called students each element of this array is object which has some keys like name, age, contact
+  
+   students.push({name:"om", age: 15 , contact: 787987987})
+  
+  for(let student of students){
+       student.address = "nagpur"
+   }
+  
+   for(let student of students){
+       console.log(student)
+   }
+  
+   students.forEach((student,index)=>{
+       console.log(student)
+       console.log("at")
+       console.log(index)
+   })
+  
+   let displayStudents = (student)=>{
+       console.log("from map")
+       console.log(student)
+   }
+  
+   students.map(displayStudents)
+  
+   for(let i=0;i< students.length; i++){
+       console.log("for loop")
+       console.log(students[i])
+   }
+  }
+  
+
 
