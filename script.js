@@ -958,7 +958,7 @@ for(i=1;i<=3;i++){
 
 //trailing portion
 //push method
-{
+/*{
 let nums=[21,22,23,24,25]
 console.log(nums.length);
 nums.push(26,27);
@@ -1151,7 +1151,7 @@ console.log(greet())
   console.log(student)
 }*/
 
-{
+/*{
 let nums=[1,2,3,4]
 
 let[a,b,c,d]=[1,2,3,4]
@@ -1230,7 +1230,7 @@ let students = [
        console.log("for loop")
        console.log(students[i])
    }
-  }
+  }*/
   
 
 
